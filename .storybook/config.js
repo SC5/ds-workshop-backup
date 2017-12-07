@@ -1,6 +1,7 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
 import { configure } from '@storybook/react';
+import 'loki/configure-react';
 
 const req = require.context('../src', true, /\.stories\.js$/)
 
