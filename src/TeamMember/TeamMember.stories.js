@@ -5,5 +5,8 @@ import TeamMember from '.'
 
 storiesOf('TeamMember', module)
   .add('index', () => (
-    <TeamMember />
+    <TeamMember
+        name="Mikko Häkkinen"
+        title="Main Organizer"
+      />
   ))
