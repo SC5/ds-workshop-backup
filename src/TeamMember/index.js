@@ -7,7 +7,7 @@ import Icon from '../Icon'
 const TeamMember = (props) => {
   const { name, title, social } = props;
 
-  const socialItems = Object.keys(social).map(key => {
+  const socialItems = social ? Object.keys(social).map(key => {
       let link = social[key]
       if (key === 'twitter') {
         link = `https://twitter.com/@${social[key]}`
@@ -16,7 +16,7 @@ const TeamMember = (props) => {
       return (<s.IconListItem>
           <s.IconLink href={link} target="_blank"><Icon name={key}/></s.IconLink>
         </s.IconListItem>)
-    })
+    }) : null
   const socialList = social ? <s.IconList>{socialItems}</s.IconList> : null;
 
   return (

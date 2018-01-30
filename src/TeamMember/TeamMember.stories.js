@@ -14,3 +14,9 @@ storiesOf('TeamMember', module)
         }}
       />
   ))
+  .add('no social networks', () => (
+    <TeamMember
+        name="Mikko Häkkinen"
+        title="Main Organizer"
+      />
+  ))
