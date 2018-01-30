@@ -8,5 +8,9 @@ storiesOf('TeamMember', module)
     <TeamMember
         name="Mikko Häkkinen"
         title="Main Organizer"
+        social={{
+          twitter: 'mikkohakkinen',
+          linkedin: 'https://linkedin.com/in/mikkohakkinen'
+        }}
       />
   ))
