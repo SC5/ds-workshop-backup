@@ -4,6 +4,14 @@ import { configure } from '@storybook/react';
 import { setConsoleOptions } from '@storybook/addon-console';
 
 const req = require.context('../src', true, /\.stories\.js$/)
+ 
+setConsoleOptions({
+  panelExclude: [],
+})
+
+setConsoleOptions({
+  panelExclude: [],
+})
 
 setConsoleOptions({
   panelExclude: [],
