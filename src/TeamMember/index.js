@@ -5,7 +5,7 @@ import * as s from './styles.js'
 import Icon from '../Icon'
 
 const TeamMember = (props) => {
-  const { name, title, social } = props;
+  const { name, title, social, avatar } = props;
 
   const socialItems = social ? Object.keys(social).map(key => {
       let link = social[key]
@@ -21,6 +21,7 @@ const TeamMember = (props) => {
 
   return (
     <s.TeamMember>
+      <img src={avatar} width="200" />
       <s.Name>{name}</s.Name>
       <s.Title>{title}</s.Title>
       {socialList}

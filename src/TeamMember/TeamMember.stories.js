@@ -3,6 +3,8 @@ import { storiesOf } from '@storybook/react'
 
 import TeamMember from '.'
 
+const avatar = require('../../assets/avatar.jpg')
+
 storiesOf('TeamMember', module)
   .add('index', () => (
     <TeamMember
@@ -12,6 +14,7 @@ storiesOf('TeamMember', module)
           twitter: 'mikkohakkinen',
           linkedin: 'https://linkedin.com/in/mikkohakkinen'
         }}
+        avatar={avatar}
       />
   ))
   .add('no social networks', () => (
