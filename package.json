@@ -37,7 +37,7 @@
   "license": "ISC",
   "devDependencies": {
     "@storybook/addon-console": "^1.0.0",
-    "@storybook/react": "^3.2.4",
+    "@storybook/react": "3.2.17",
     "@storybook/storybook-deployer": "^2.0.0",
     "add-component": "^2.5.0",
     "babel-eslint": "7.2.3",
@@ -55,12 +55,26 @@
     "yargs": "^8.0.2"
   },
   "dependencies": {
+    "babel-core": "^6.26.0",
     "classnames": "^2.2.5",
     "lodash": "^4.17.4",
+    "loki": "0.9.1",
     "react": "^16.x.x",
     "react-dom": "^16.x.x",
     "recompose": "^0.25.0",
     "styled-components": "^2.1.2",
     "styled-utils": "^1.2.4"
+  },
+  "loki": {
+    "configurations": {
+      "chrome.laptop": {
+        "target": "chrome.app",
+        "width": 1366,
+        "height": 768,
+        "deviceScaleFactor": 1,
+        "mobile": false,
+        "fitWindow": false
+      }
+    }
   }
 }
