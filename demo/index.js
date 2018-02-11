@@ -1,28 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
-/*
-import { ThemeProvider } from 'styled-components'
-import { theme, Button } from '../lib/my-awesome-library'
-*/
+import Home from './home'
+import About from './about'
 
-/*
-const App = () => {
-  return (
-    <ThemeProvider theme={theme}>
+const App = () => (
+  <Router>
     <div>
-    <h1>Hello world</h1>
-    <Button color="primary">1111</Button>
+      <Route exact path="/" component={Home} />
+      <Route path="/about" component={About} />
     </div>
-    </ThemeProvider>
-  )
-}
-*/
-
-const App = () => {
-  return (
-    <h1>Hello world</h1>
-  )
-}
+  </Router>
+)
 
 ReactDOM.render(<App />, document.getElementById('react-root'));
